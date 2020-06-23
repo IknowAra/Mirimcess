@@ -16,6 +16,12 @@ public class SecondStory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_story);
 
+        final ImageView iv = (ImageView)findViewById(R.id.imageView);
+        Animation anim = AnimationUtils.loadAnimation
+                (getApplicationContext(),
+                        R.anim.scale);
+        iv.startAnimation(anim);
+
         //뷰페이저 세팅
         ViewPager viewPager = findViewById(R.id.viewPager);
         fragmentPagerAdapter = new ViewPagerAdapter_Second(getSupportFragmentManager());
