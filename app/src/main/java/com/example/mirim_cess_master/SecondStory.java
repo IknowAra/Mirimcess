@@ -13,7 +13,7 @@ public class SecondStory extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState); 
         setContentView(R.layout.activity_second_story);
 
         final ImageView iv = (ImageView)findViewById(R.id.imageView);
